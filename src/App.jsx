@@ -78,13 +78,13 @@ function App() {
     const currentTask = tasks.filter(task => task.state !== 'completed');
     return (
       <div>
-        <h1>Task Manager </h1>
+        <h1 style={{ color: 'black', backgroundColor: 'yellow' }}>Task Manager </h1>
         <div>
           <h2>Current Tasks ({currentTask.length})</h2>
           <ul>
             {currentTask.map(task =>
               <li key={task.id}>
-                <strong>{task.title}</strong> {task.state}<br />
+                <strong>{task.title}</strong> <strong style={{ color: 'red' }}>{task.state}</strong><br />
                 Priority: {task.priority} <br />
                 Est. Time {task.estimatedTime} <br />
               </li>)
@@ -96,7 +96,7 @@ function App() {
           <ul>
             {completedTask.map(task =>
               <li key={task.id}>
-                <strong>{task.title}</strong> {task.state}<br />
+                <strong>{task.title}</strong> <strong style={{ color: 'green' }}>{task.state}</strong><br />
                 Priority: {task.priority} <br />
                 Est. Time {task.estimatedTime} <br />
               </li>)
