@@ -1,0 +1,14 @@
+h1{
+    background-color: aqua;
+}
+.completed {
+    background-color: green;
+  }
+  
+  .backlog {
+    background-color: brown;
+  }
+  
+  .in_progress {
+    background-color: blueviolet;
+  }
